@@ -1,0 +1,9 @@
+public class Buuddy {
+    public static void main(String[] args)
+    {
+        Doggy dog = new Doggy();
+        myDog.name = "Dingo"l
+        myDog.age = 5;
+        myDog.bark();
+    }
+}

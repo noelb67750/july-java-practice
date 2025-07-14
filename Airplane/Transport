@@ -1,0 +1,7 @@
+public class Transport 
+{
+
+public String move() {
+    return "The transport is moving.";
+}
+}

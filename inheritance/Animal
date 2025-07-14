@@ -1,0 +1,11 @@
+public class Animal {
+    void eat() {
+        System.out.println("this animal eats food.");
+    }
+
+public class Dog Extends Animal {
+void snarl() {
+    System.out.println("The dog snarls!");
+}
+}
+}

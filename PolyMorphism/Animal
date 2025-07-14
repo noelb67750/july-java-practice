@@ -1,0 +1,13 @@
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+class dog extends Animal {
+    void makeSound() {
+        System.out.println("Woof!");
+    }
+}
+
+Animal a = new dog();
+a.makeSound(); // Outputs: Woof!

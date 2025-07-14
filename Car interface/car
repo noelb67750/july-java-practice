@@ -1,0 +1,42 @@
+package vehicle;
+
+class Car implements Vehicle, VehicleInfo {
+    private String make;
+    private String model;
+    private int year;
+    private boolean engineStarted;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.engineStarted = false;
+    }
+
+    @Override
+    public void startEngine() {
+        engineStarted = true;
+        System.out.println("Car engine started.");
+    }
+
+    @Override
+    public void stopEngine() {
+        engineStarted = false;
+        System.out.println("Car engine stopped.");
+    }
+
+    @Override
+    public String getMake() {
+        return make;
+    }
+
+    @Override
+    public String getModel() {
+        return model;
+    }
+
+    @Override
+    public int getYear() {
+        return year;
+    }
+}

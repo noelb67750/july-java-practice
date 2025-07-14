@@ -1,4 +1,3 @@
-package codefinitypractice;
 class Person {
     String name;
     int age;

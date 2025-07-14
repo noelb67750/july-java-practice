@@ -1,5 +1,3 @@
-package codefinitypractice;
-
 public class Toaster {
     int ElectricityPercentage;
     String PowerOutput;

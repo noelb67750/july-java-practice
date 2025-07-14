@@ -1,0 +1,79 @@
+import Java,util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Post {
+    private final String imageUrl;
+
+    private final String caption;
+    
+    private final String likeCount;
+
+    private final String commentCount;
+
+    private final String userId;
+
+    private final List<String> comments;
+
+    private final Map<String>> replies;
+public Post(String imageUrl, String caption, String userId) {
+        this.imageUrl = imageUrl;
+        this.caption = caption;
+        this.userId = userId;
+        this.likeCount = "0"; // Default like count
+        this.commentCount = "0"; // Default comment count
+        this.comments = new ArrayList<>();
+        this.replies = new HashMap<>();
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public String getCaption() {
+        return caption;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getLikeCount() {
+        return likeCount;
+    }
+
+    public String getCommentCount() {
+        return commentCount;
+    }
+
+    public List<String> getComments() {
+        return comments;
+    }
+
+    public Map<String, List<String>> getReplies() {
+        return replies;
+    }
+    public void addComment(String comment) {
+        comments.add(comment);
+        // Increment comment count
+    }
+    public void replyToComment(String originalComment, String reply) {
+        replies.putIfAbsent(originalComment, new ArrayList<>());
+        replies.get(originalComment).add(reply);
+        // Increment reply count for the original comment
+    }
+    public void ShowCommentsAndReplies() {
+        System.out.println("Comments and replies ");
+        for (String comment : comments) {
+            System.out.println("Comment: " + comment);
+            List<String> commentReplies = replies.get(comment);
+            if (commentReplies != null && !commentReplies.isEmpty()) {
+                System.out.println("Replies:");
+                for (String reply : commentReplies) {
+                    System.out.println(" - " + reply);
+                }
+            }
+        }
+    }
+}

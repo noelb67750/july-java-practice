@@ -1,5 +1,3 @@
-package codefinitypractice;
-
 public class GETTERPRACTICE {
     public static void main(String[] args) {
         Weightlifter joe = new Weightlifter();

@@ -1,5 +1,3 @@
-package codefinitypractice;
-
 /*
  * modifier ClassName(ParameterType parameter1, ParameterType parameter2) {
  * this.parameter1 = parameter1;

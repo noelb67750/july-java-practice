@@ -1,0 +1,68 @@
+import java.util.UUID;
+
+public abstract class BaseDatingUser {
+protected final String id;
+protected String FullName;
+protected String Bio;
+protected String ProfilePictureUrl;
+protected String DatingPreference;
+protected String Gender;
+
+
+private static String generateUniqueId() {
+    return UUID.randomUUID().toString();
+}
+//default profile picture (host on discord)
+private static String DEFAULT_PROFILE_PICTURE_URL = "https://example.com/default-profile-picture.png";
+}
+
+// constructor for deafualt profile
+public BaseDatingUser(String Bio, String FullName, String ProfilePictureUrl, String DatingPreference, String Gender)
+{
+this.id = generateUniqueId();
+this.FullName = FullName;
+this.Bio = bio;
+this.ProfilePictureUrl = ProfilePictureUrl != null ? ProfilePictureUrl : DEFAULT_PROFILE_PICTURE_URL;
+this.Gender = Gender;
+this.DatingPreference = DatingPreference;
+}
+
+public BaseUser(String Bio, String FullName, String DatingPreference, String Gender)
+{
+this.id = UUID.randomUUID().toString();
+this.FullName = FullName;
+this.Bio = Bio;
+this.ProfilePictureUrl = DEFAULT_PROFILE_PICTURE_URL;
+this.Gender = Gender;
+}
+public String getId() {
+    return id;
+}
+public String getFullName() {
+    return FullName;
+}
+public void setFullName(String fullName) {
+    this.FullName = fullName;
+}
+public String getBio() {
+    return Bio;
+}
+public void setBio(String bio) {
+    this.Bio = bio;
+}
+public String getProfilePictureUrl() {
+    return ProfilePictureUrl;
+}
+public void setProfilePictureUrl(String profilePictureUrl) {
+    this.ProfilePictureUrl = profilePictureUrl != null ? profilePictureUrl : DEFAULT_PROFILE_PICTURE_URL;
+}
+public String getDatingPreference() {
+    return DatingPreference;
+}
+public void setDatingPreference(String datingPreference) {
+    this.DatingPreference = datingPreference;
+}
+public abstract void printProfile();
+{
+    
+}

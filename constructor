@@ -1,0 +1,10 @@
+public class constructor {
+
+
+}
+public class Car {
+    String model;
+}
+public Car (String model) {
+    this.model = model;
+}

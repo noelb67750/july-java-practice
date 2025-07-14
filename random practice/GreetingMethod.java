@@ -1,4 +1,3 @@
-package codefinitypractice;
 import java.util.Scanner;
 
 public class GreetingMethod {

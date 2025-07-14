@@ -1,0 +1,22 @@
+public class Parent {
+
+    public String move() {
+        return "The parent is moving.";
+    }
+    
+    public String speak() {
+        return "The parent is speaking.";
+    }
+    
+    public String eat() {
+        return "The parent is eating.";
+    }
+    
+    public String sleep() {
+        return "The parent is sleeping.";
+    }
+    
+    public String work() {
+        return "The parent is working.";
+    }
+}

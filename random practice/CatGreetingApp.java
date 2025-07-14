@@ -1,7 +1,5 @@
-package codefinitypractice;
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import javax.swing.*;
 
 public class CatGreetingApp {
     public static void main(String[] args) {

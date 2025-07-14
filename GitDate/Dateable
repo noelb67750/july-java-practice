@@ -1,0 +1,8 @@
+import java.util.List;
+
+public interface Dateable {
+    void Date(UserProfile user)
+    void UnDate(UserProfile user);
+    List<UserProfile> getDatingHistory();
+    List<UserProfile> getDatingPreferences();
+}

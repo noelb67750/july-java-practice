@@ -1,0 +1,20 @@
+public class Child extends Parent {
+ 
+@Override
+
+public String move() {
+    return "The parent is moving.";
+}
+
+public String speak() {
+    return "The parent is speaking.";
+}
+
+public String eat() {
+    return "The parent is eating.";
+}
+
+public String sleep() {
+    return "The parent is sleeping.";
+}
+}

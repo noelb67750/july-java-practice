@@ -1,0 +1,6 @@
+public class Airplane extends Transport {
+    @Override
+    public String move() {
+        return "The airplane is flying.";
+    }
+}

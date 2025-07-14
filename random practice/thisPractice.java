@@ -1,4 +1,3 @@
-package codefinitypractice;
 class Weighlifter {
     String name;
     int BenchPress;

@@ -1,5 +1,3 @@
-package ToasterOven;
-
 public class Toaster {
     int ElectricityPercentage;
     String PowerOutput;

@@ -1,10 +1,6 @@
-package codefinitypractice;
-
 // Import Swing classes for GUI components
-import javax.swing.*;
-// Import AWT classes for layout and event handling
 import java.awt.*;
-import java.awt.event.*;
+import javax.swing.*;
 
 public class GreetingApp {
 

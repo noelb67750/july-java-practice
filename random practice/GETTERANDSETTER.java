@@ -1,5 +1,3 @@
-package codefinitypractice;
-
 public class GETTERANDSETTER {
     public static void main(String[] args) {
         Person bob = new Person();
