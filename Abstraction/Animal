@@ -1,8 +1,0 @@
-public interface Animal {
-    void makeSound();
-}
-public class dog implements Animal {
-    public void makeSound() {
-        System.out.println("Woof!");
-    }
-}
